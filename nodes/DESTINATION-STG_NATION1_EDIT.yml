@@ -1,5 +1,5 @@
 steps:
-  STG_NATION1-2af74f1c-171f-4c9f-bf14-9308e89925a3:
+  STG_NATION1_EDIT-2af74f1c-171f-4c9f-bf14-9308e89925a3:
     operation:
       config:
         insertStrategy: INSERT
@@ -67,17 +67,18 @@ steps:
         cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:
-          - aliases: {}
+          - aliases:
+              STG_NATION_EDIT: 0945ab54-0399-4eaf-999f-fb72a68cdd1f
             customSQL:
               customSQL: ""
             dependencies:
               - locationName: DESTINATION
-                nodeName: STG_NATION
+                nodeName: STG_NATION_EDIT
             join:
-              joinCondition: FROM {{ ref('DESTINATION', 'STG_NATION') }} "STG_NATION"
-            name: STG_NATION1
+              joinCondition: FROM {{ ref('DESTINATION', 'STG_NATION_EDIT') }} "STG_NATION_EDIT"
+            name: STG_NATION1_EDIT
             noLinkRefs: []
-      name: STG_NATION1
+      name: STG_NATION1_EDIT
       overrideSQL: false
       schema: ""
       sqlType: Stage
