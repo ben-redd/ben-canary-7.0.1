@@ -44,7 +44,7 @@ operation:
           - columnReferences:
               - columnCounter: 6638b0de-9bef-46fb-80d0-903746ac21ed
                 stepCounter: bf0d6442-d24f-4621-ba19-1398279de48c
-            transform: ""
+            transform: "'fixed string test'"
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 616cacf3-2b0d-4bac-89df-bec77734e218
